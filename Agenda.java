@@ -69,7 +69,7 @@ public class Agenda extends BaseObject
     /**
      * @param oid - The new object id.
      */
-    public void setOid(String oid)
+    private void setOid(String oid)
     {
         this.oid = oid;
     }
@@ -85,7 +85,7 @@ public class Agenda extends BaseObject
     /**
      * @param number - The new agenda number.
      */
-    public void setNumber(int number)
+   private void setNumber(int number)
     {
         this.number = number;
     }
