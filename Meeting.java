@@ -67,7 +67,7 @@ public class Meeting extends BaseObject
      *
      * @param id
      */
-    public Meeting(String committeeName, Date meetingDateTime) {
+    protected Meeting(String committeeName, Date meetingDateTime) {
         this.setCommitteeName(committeeName);
         this.setMeetingDateTime(meetingDateTime);
         this.setOid(committeeName+"-"+new SimpleDateFormat("MM-dd-yyyy").format(this.getMeetingDateTime()));
@@ -99,7 +99,7 @@ public class Meeting extends BaseObject
     /**
      * @param oid - The object's new oid
      */
-    private void setOid(String oid)
+    protected void setOid(String oid)
     {
         this.oid = oid.replace(" ", "-").replace(",", "");
     }
