@@ -99,7 +99,7 @@ public class Meeting extends BaseObject
     /**
      * @param oid - The object's new oid
      */
-    protected void setOid(String oid)
+    private void setOid(String oid)
     {
         this.oid = oid.replace(" ", "-").replace(",", "");
     }
@@ -139,7 +139,7 @@ public class Meeting extends BaseObject
         return meetingDateTime;
     }
 
-    protected void setMeetingDateTime(Date meetingDateTime) {
+    private void setMeetingDateTime(Date meetingDateTime) {
         this.meetingDateTime = meetingDateTime;
     }
 
@@ -163,7 +163,7 @@ public class Meeting extends BaseObject
         return committeeName;
     }
 
-    protected void setCommitteeName(String committeeName) {
+   private void setCommitteeName(String committeeName) {
         this.committeeName = committeeName;
     }
 
