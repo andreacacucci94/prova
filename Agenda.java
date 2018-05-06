@@ -41,7 +41,7 @@ public class Agenda extends BaseObject
      * @param year - The calendar year for the agenda
      * @param number - The agenda number for the calendar year
      */
-    public Agenda(int session, int year, int number)
+    private Agenda(int session, int year, int number)
     {
         this();
         this.setSession(session);
