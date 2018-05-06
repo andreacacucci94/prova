@@ -135,7 +135,7 @@ public class Meeting extends BaseObject
     }
 
 
-    public Date getMeetingDateTime() {
+    protected Date getMeetingDateTime() {
         return meetingDateTime;
     }
 
